@@ -6,13 +6,20 @@
 package paquete06;
 
 public class EstudianteDistancia extends Estudiante {
+
     /*1.  Declarar
-        numeroAsignaturas: Entero 
-        costoAsginatura: Real 
-    */ 
+    numeroAsignaturas: Entero
+    costoAsginatura: Real
+     */ 
     
     int numeroAsignaturas;
     double costoAsignatura;
+
+    public EstudianteDistancia(int numeroAsignaturas, double costoAsignatura, String nombre, String apellido) {
+        super(nombre, apellido);
+        this.numeroAsignaturas = numeroAsignaturas;
+        this.costoAsignatura = costoAsignatura;
+    }
     
     //  Métodos establecer y calcular para los datos o atributos de la clase
     
@@ -41,6 +48,11 @@ public class EstudianteDistancia extends Estudiante {
     // 6. Método obtenerCostoAsignatura() : Real
     public double obtenerCostoAsignatura(){
         return costoAsignatura;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+" EstudianteDistancia{" + "numeroAsignaturas=" + numeroAsignaturas + ", costoAsignatura=" + costoAsignatura + '}';
     }
         
 }

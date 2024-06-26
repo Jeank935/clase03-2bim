@@ -28,10 +28,14 @@ public class Ejecutor {
             5 objeto de Triángulo 
             Comprobar el concepto del polimorfismo.
         */
-        
+        String opcion = "";
         // inicio de la solución
         ArrayList<Figura> figuras = new ArrayList<>();
-        
+        do{
+            System.out.println("Que desea realizar?\n"
+                    + "1.");
+            
+        }while(opcion.equalsIgnoreCase("SI"));
         
         
         // proceso para comprobar el polimorfismo
